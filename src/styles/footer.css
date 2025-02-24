@@ -1,0 +1,102 @@
+footer {
+    background-color: #FFFDFA;
+    padding: 2rem 10rem;
+}
+
+footer p {
+    color: var(--text-primary);
+    padding-top: 0;
+}
+
+.better {
+    color: #4A235A;
+    font-weight: 800;
+}
+
+.better-title {
+    color: #2E86C1;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+
+h2.better {
+    font-size: 2rem;
+    margin: 1rem 0 1.5rem 0;
+}
+
+footer>div {
+    gap: 4rem;
+    line-height: 1.7;
+    flex-wrap: wrap;
+}
+
+footer>div div {
+    flex-direction: column;
+}
+
+footer .sub-head {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+
+footer .foot-link {
+    margin: 0.5rem 0;
+    color: var(--text-primary);
+    width: fit-content;
+    transition-duration: 0.2s;
+    background-size: 0 5px;
+    background-image: linear-gradient(180deg, currentColor 25%, transparent 0);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    display: inline;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    transition: background-size 0.3s;
+}
+
+footer .foot-link:hover {
+    background-image: linear-gradient(180deg, currentColor 25%, transparent 0);
+    background-size: 100% 5px;
+    background-position-x: left;
+    background-position-y: bottom;
+}
+
+.footer-foot {
+    margin-top: 8rem;
+    color: var(--text-primary);
+}
+
+.social-links {
+    flex-direction: row;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.foot-para {
+    font-size: 0.8rem;
+    margin: 0.6rem 0;
+    opacity: 0.9;
+}
+
+.foot-para a {
+    text-decoration: underline;
+}
+
+.foot-para a:hover {
+    color: #2E86C1;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    footer {
+        padding: 2rem;
+    }
+
+    .footer-foot {
+        margin-top: 4rem;
+    }
+}

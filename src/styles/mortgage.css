@@ -1,0 +1,248 @@
+main {
+    background-color: #FFFDFA;
+}
+
+#calculator {
+    background-color: var(--bg-fif);
+}
+
+/* Mortgage Explanation & Calculator Sections */
+#mortgage-explanation, #calculator {
+    color: var(--text-primary);
+    padding: 3rem 4rem;
+}
+
+#calculator h2 {
+    font-size: 2.5rem;  /* Reduced for better spacing */
+    font-weight: 600;
+}
+
+#calculator .sub-head {
+    margin: 1rem 0;
+    opacity: 0.85;
+    max-width: 750px;
+    color: var(--text-primary);
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+/* Labels & Inputs */
+label>span {
+    font-weight: 600;
+}
+
+input, select {
+    color: var(--text-primary);
+    width: 100%;
+    max-width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+/* Input Box Container */
+.fix {
+    align-items: center;
+    border: 1px solid var(--text-primary);
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    color: var(--text-primary);
+    padding: 0.8rem;
+    gap: 0.5rem;
+    margin: 0.8rem 0;
+    max-width: 320px;  /* Better alignment */
+    transition: 0.3s;
+}
+
+.fix:hover {
+    border-color: var(--bg-tertiary);
+    box-shadow: inset 2px 2px 0 var(--bg-tertiary),
+                inset -2px -2px 0 var(--bg-tertiary),
+                inset -2px 2px 0 var(--bg-tertiary),
+                inset 2px -2px 0 var(--bg-tertiary);
+}
+
+/* Home Price Section */
+.hpm {
+    margin: 2rem 0;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.home-price .fix {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Range Slider */
+.range input {
+    width: 100% !important;
+    margin: 2rem auto;
+    display: block;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 4px;
+    background: lightgray;
+    border-radius: 5px;
+}
+
+.range input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: var(--text-primary);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range input::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: var(--text-primary);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range input::-ms-thumb {
+    width: 16px;
+    height: 16px;
+    background: var(--text-primary);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range input::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, var(--text-primary) var(--range-progress), lightgray var(--range-progress));
+    height: 4px;
+}
+
+/* Down Payment Section */
+.dp {
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dp>div {
+    gap: 2rem;
+    align-items: flex-end;
+}
+
+/* Payment Breakdown */
+#payment-breakdown {
+    padding: 3rem 4rem;
+    color: var(--text-primary);
+}
+
+#payment-breakdown>div {
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+#payment-breakdown h3 {
+    font-weight: 500;
+}
+
+/* Breakdown Visualization */
+.payment-breakdown-visual div {
+    border-radius: 100px;
+    height: 80px;
+    transition: 0.3s;
+}
+
+.payment-breakdown-visual div:nth-child(1), .v-1::before {
+    background-color: var(--bg-primary);
+}
+
+.payment-breakdown-visual div:nth-child(2), .v-2::before {
+    background-color: purple;
+}
+
+.payment-breakdown-visual div:nth-child(3), .v-3::before {
+    background-color: pink;
+}
+
+.payment-breakdown-visual div:nth-child(4), .v-4::before {
+    background-color: yellow;
+}
+
+.payment-breakdown-visual div:nth-child(5), .v-5::before {
+    background-color: orange;
+}
+
+/* Copy Link Button */
+.copy-link-btn {
+    padding: 1rem 1.5rem;
+    background-color: var(--bg-fif);
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 2rem 0;
+    transition: 0.3s;
+}
+
+.copy-link-btn:hover {
+    opacity: 0.85;
+}
+
+/* Mortgage Explanation */
+#mortgage-explanation {
+    padding-top: 0 !important;
+}
+
+#mortgage-explanation .question {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#mortgage-explanation .answer {
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+#mortgage-explanation .answer div {
+    margin: 2rem 0;
+    opacity: 0.85;
+}
+
+#mortgage-explanation img {
+    display: block;
+    margin: 0.5rem auto;
+    max-width: 98%;
+    height: auto;
+}
+
+#mortgage-explanation .explanation {
+    max-width: 780px;
+    margin: 0 auto !important;
+}
+
+#mortgage-explanation .topic {
+    border-top: 1px solid lightgray;
+    padding: 2rem 0;
+}
+
+#mortgage-explanation ul {
+    padding-left: 2.5rem;
+    margin: -1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    #payment-breakdown, #calculator, #mortgage-explanation {
+        padding: 2rem 1.5rem;
+    }
+
+    #calculator h2 {
+        font-size: 2rem;
+    }
+
+    .fix {
+        max-width: 100%;
+    }
+}

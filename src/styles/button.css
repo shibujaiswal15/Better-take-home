@@ -1,0 +1,43 @@
+.btn-p {
+    background-color: #2E86C1;
+    color: #000000;
+    padding: 1.1rem 2.8rem;
+    border-radius: 100px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.btn-p:hover {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 2px solid #2E86C1;
+}
+
+.btn-p.dark {
+    background-color: #4A235A;
+    color: #FFFFFF;
+}
+
+.btn-p.dark:hover {
+    background: #FAD7A0;
+    color: #4A235A;
+}
+
+.btn-s {
+    padding: 0.8rem 1.5rem;
+    border: 1px solid #5D6D7E;
+    border-radius: 100px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #5D6D7E;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-s:hover, .btn-s.active {
+    color: #FAD7A0;
+    border-color: #FAD7A0;
+    box-shadow: inset 2px 2px 0 #FAD7A0,
+    inset -2px -2px 0 #FAD7A0,
+    inset -2px 2px 0 #FAD7A0,
+    inset 2px -2px 0 #FAD7A0;
+}

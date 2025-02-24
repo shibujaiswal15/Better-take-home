@@ -1,0 +1,117 @@
+#got-questions {
+    padding: 2rem 5rem;
+    background-color: #FFFDFA;
+    border-bottom: 1px solid lightgray;
+}
+
+.got-head {
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.got-head p {
+    color: var(--text-primary);
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.got-questions-btns-container {
+    gap: 1rem;
+}
+
+.got-questions-container {
+    margin: 4rem 0;
+    flex-wrap: wrap;
+}
+
+.ques {
+    padding: 0.8rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.ques>div {
+    background-color: var(--bg-fif);
+    border-radius: 10px;
+    padding: 2rem 2.5rem;
+    min-height: 100%;
+}
+
+:root {
+    --text-primary: #333333;
+    --bg-primary: #1A237E;
+    --bg-tertiary: #283593;
+    --bg-fif: #ECEFF1;
+}
+
+.ques-title {
+    color: var(--bg-primary);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.ques-desc {
+    max-width: 500px;
+    margin: 1.4rem 0;
+    color: var(--bg-primary);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.ques-btn {
+    border: 1px solid lightgray;
+    height: 45px;
+    width: 45px;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    color: var(--bg-primary);
+    margin: 1.4rem 0;
+    transition-duration: 0.3s;
+}
+
+.ques-btn:hover {
+    background-color: var(--bg-primary);
+    color: #FFFFFF;
+}
+
+@media (max-width: 1150px) {
+    .got-head {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .got-questions-btns-container {
+        margin-top: 3rem;
+        overflow-x: auto;
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    .got-questions-container {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .ques {
+        width: 100%;
+    }
+
+    .ques>div {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    #got-questions {
+        padding: 1.7rem 1.4rem;
+    }
+
+    .got-head p {
+        font-size: 2.5rem;
+    }
+}

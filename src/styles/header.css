@@ -1,0 +1,180 @@
+/* Root Colors */
+:root {
+    --text-primary: #212121; /* Improved readability */
+    --bg-primary: #0D47A1; /* Deeper, richer blue */
+    --bg-tertiary: #1976D2; /* Lighter accent blue */
+    --bg-fif: #E3F2FD; /* Soft background */
+    --bg-quaternary: #F1F8E9; /* Light green tint for contrast */
+}
+
+/* Header Styles */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #FFFFFF;
+    color: var(--text-primary);
+    padding: 1.5rem 3rem;
+    align-items: center;
+    justify-content: space-between;
+    transition-duration: 0.3s;
+}
+
+header.home {
+    background-color: var(--bg-primary);
+    color: #FFFFFF;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+header h1 a {
+    background-color: transparent !important;
+}
+
+header.home h1 a {
+    color: #FFFFFF !important;
+}
+
+header > div {
+    align-items: center;
+    gap: 2rem;
+}
+
+header a {
+    padding: 0.8rem 1.5rem;
+    border-radius: 100px;
+    transition: 0.3s;
+}
+
+header a:hover {
+    background-color: var(--bg-quaternary);
+}
+
+header.home a:hover {
+    color: var(--text-primary);
+}
+
+/* Call Button */
+a.call {
+    border: 1px solid lightgray;
+    height: 45px;
+    width: 45px;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+a.call:hover {
+    border-color: transparent;
+}
+
+header a.call:hover {
+    color: var(--text-primary);
+}
+
+/* Continue Button */
+a.continue {
+    color: #FFFFFF;
+    background-color: var(--bg-tertiary);
+}
+
+header.home a.continue {
+    background-color: var(--text-primary);
+    color: #000000;
+}
+
+a.continue:hover {
+    background-color: var(--bg-primary);
+}
+
+header.home a.continue:hover {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    transition-duration: 0.3s;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    color: var(--text-primary) !important;
+}
+
+.sidebar.active {
+    left: 0;
+    z-index: 101;
+}
+
+.sidebar .head {
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.sidebar a {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.sidebar a.mob-call {
+    text-align: center;
+    justify-content: center;
+    gap: 0.8rem;
+    background-color: var(--bg-fif);
+    padding: 0.5rem;
+}
+
+.sidebar .foot {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    width: 100%;
+}
+
+.sidebar .foot a {
+    display: block;
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem 0.5rem;
+    text-align: center;
+}
+
+.sidebar .foot a.mob-sign {
+    display: flex;
+    border: 1px solid lightgray;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 0.5rem;
+    }
+
+    header > div {
+        gap: 1rem;
+    }
+
+    header a {
+        padding: 0.4rem 1rem;
+    }
+
+    a.call {
+        height: 35px;
+        width: 35px;
+        font-size: initial;
+    }
+}
