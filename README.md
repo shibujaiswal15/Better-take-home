@@ -23,10 +23,7 @@ To set up the project, follow these steps:
    npm run dev
  ```
 
-You can preview the production build with:
-```bash
-npm run preview
-```
+
 
    You can also start the server and open the app in a new browser tab:
    ```bash
@@ -47,7 +44,7 @@ You can preview the production build with:
 npm run preview
 
 ```
-🚀 **Live Demo**: [Click here to visit the Tech Conference 2025 website](https://tech-conference-project.netlify.app/)
+🚀 **Live Demo**: [Click here to visit the Better-com-website](https://better-com-website.netlify.app/)
 
 # Features
 - **Home**: A visually engaging landing page with a sleek UI.
